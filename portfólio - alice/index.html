@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Alice — Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="menu" id="topo">
+    <span class="menu-logo" id="logo">MedTec</span>
+    <nav class="menu-nav" aria-label="Menu principal">
+      <a href="#hero" class="menu-link">Início</a>
+      <a href="#sobre" class="menu-link">Sobre</a>
+      <a href="#habilidades" class="menu-link">Habilidades</a>
+      <a href="#projetos" class="menu-link">Projetos</a>
+      <a href="#contato" class="menu-link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <h1 id="titulo"><span id="saudacao">Olá seja bem-vindo(a)</span>, eu sou alice! 🎬</h1>
+      <p class="hero-texto" id="subtitulo">Sou estudande do MedioTec no Senac RN. Estou no primeiro ano do curso de informática para internet. </p>
+      <a class="btn-hero" id="btn-hero" href="#projetos">Ver meus projetos</a>
+    </section>
+
+    <section class="secao" id="sobre">
+      <h2 class="secao-titulo">Sobre mim</h2>
+      <p id="texto-sobre">Sou estudante do MedioTec no Senac RN tenho 16 anos moro em Natal RN, e estou no primeiro ano do curso de informática para internet.</p>
+      <p>Ainda estou aprendendo mais sobre programação, e tenho bastante interesse na área, mas provavelmente não seguirei carreira nessa área. Tenho interesse na área da Neuropsicologia, e quero me especializar nessa área. Adoro cinema, livros e música meu filme favorito é "Casamento do meu melhor amigo" meu livro favorito é "Fazendo meu Filme da Paula Pimenta" e minha música favorita é "Silver Springs da banda Fleetwood Mac".</p>
+    </section>
+
+    <section class="secao" id="habilidades">
+      <h2 class="secao-titulo">Habilidades</h2>
+      <ul class="skills-wrap" id="skills-wrap">
+        <li class="skill-tag">HTML — <span class="skill-nivel">confortável</span></li>
+        <li class="skill-tag">CSS — <span class="skill-nivel">confortável</span></li>
+        <li class="skill-tag">JavaScript — <span class="skill-nivel">praticando</span></li>
+        <li class="skill-tag">Flexbox e Grid — <span class="skill-nivel">praticando</span></li>
+        <li class="skill-tag">Figma — <span class="skill-nivel">confortável</span></li>
+      </ul>
+    </section>
+
+    <section class="secao" id="projetos">
+      <h2 class="secao-titulo">Projetos</h2>
+      <div class="grade">
+
+        <article class="projeto-card" id="card-1">
+          <h3>SPACE-GIRLS</h3>
+          <p>Página de uma site de agênciamento de modelos.</p>
+          <p class="card-tech">FIGMA</p>
+          <a href="#">Em breve</a>
+        </article>
+
+        <article class="projeto-card" id="card-2">
+          <h3>GREAT PIZZA, GREAT MATH!</h3>
+          <p>Jogo para unir a matemática com a tecnologia, desenvolvido em grupo.</p>
+          <p class="card-tech">HTML · CSS · JavaScript</p>
+          <a href="#">Em breve</a>
+        </article>
+
+        <article class="projeto-card" id="card-3">
+          <h3>CALCULADORA DO FUTURO</h3>
+          <p>Calculadora web com funcionalidades avançadas, desenvolvida em grupo.</p>
+          <p class="card-tech">HTML · CSS · JavaScript</p>
+          <a href="#">Em breve</a>
+        </article>
+
+        <article class="projeto-card" id="card-4">
+          <h3>Lista de Tarefas</h3>
+          <p>Lista em que dá para adicionar, concluir e remover tarefas, exercício de JavaScript.</p>
+          <p class="card-tech">HTML · CSS · JavaScript</p>
+          <a href="#">Em breve</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="secao" id="contato">
+      <h2 class="secao-titulo">Contato</h2>
+      <form class="form-contato" id="form-contato" action="#" method="post">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required autocomplete="name">
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+        <div class="campo campo-check">
+          <input type="checkbox" id="consentimento" name="consentimento" required>
+          <label for="consentimento">Concordo em enviar meus dados apenas para que eu receba uma resposta.</label>
+        </div>
+        <button type="submit" class="btn-hero">Enviar mensagem</button>
+      </form>
+
+      <p class="contato-links">
+        <a href="https://github.com/maria30317512-netizen/UC-14---HTML-e-CSS" target="_blank" rel="noopener noreferrer">GitHub</a>
+        ·
+        <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; <span id="ano">2026</span> alice. Todos os direitos reservados.</p>
+    <p><a href="#topo">Voltar ao topo</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
